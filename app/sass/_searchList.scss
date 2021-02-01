@@ -1,0 +1,103 @@
+.predictive-search__count {
+  border: none;
+  border-bottom: 1px solid #ccc;
+  padding: 30px 0;
+  font-weight: bold;
+  a {
+    padding: 10px;
+  }
+}
+.content-card {
+    display: grid;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    max-width: 500px;
+    grid-template-columns: 40% 60%;
+    margin: 30px 0;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  &__thumbnail {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    img {
+        max-height: 200px;
+      width: auto;
+    }
+  }
+  &__product-description {
+    max-width: 280px;
+    padding: 10px 0;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  &__name {
+    text-transform: uppercase;
+    font-size: 26px;
+    letter-spacing: -1px;
+    line-height: 1;
+  }
+  &__shop-now{
+    background-color: #000;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    outline: none;
+    text-transform: uppercase;
+    margin-top: 20px;
+    max-width: 150px;
+    &:hover{
+        opacity: 0.5;
+    }
+  }
+  &__product-tags{
+      margin-bottom: 10px;
+      span{
+          margin:5px 10px 5px 0;
+      }
+  }
+  &__product-tag{
+    display: inline-block;
+    margin: 5px 5px 5px 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+  }
+  &__leftColumn{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+  }
+}
+.search__list{
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  justify-content: center;
+  align-items: center;
+  grid-gap: 5%;
+}
+
+@media screen and (max-width: 1024px) {
+  .search__list{
+    display: grid;
+    grid-template-columns: 45% 45%;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 2%;
+  }
+}
+@media screen and (max-width: 980px) {
+  .search__list{
+    display: grid;
+    grid-template-columns: 100%;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 2%;
+  }
+}
